@@ -178,3 +178,8 @@ STDMETHODIMP CMPAImageCut::GetImage(LONG lIndex, CHAR** pImg, LONG* lSize)
 	return S_OK;
 }
 
+
+int CMPAImageCut::test(int t)
+{
+	return 0;
+}

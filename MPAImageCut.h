@@ -66,6 +66,8 @@ public:
 	STDMETHOD(GetFaceCount)(LONG* lCount);
 	STDMETHOD(Create)(BSTR bsImage,BSTR bsFaceTag);
 	STDMETHOD(GetImage)(LONG lIndex, CHAR** pImg, LONG* lSize);
+public:
+	int test(int t);
 };
 
 OBJECT_ENTRY_AUTO(__uuidof(MPAImageCut), CMPAImageCut)

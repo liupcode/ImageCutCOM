@@ -3,8 +3,8 @@
 /* this ALWAYS GENERATED file contains the definitions for the interfaces */
 
 
- /* File created by MIDL compiler version 6.00.0361 */
-/* at Tue May 14 16:51:20 2013
+ /* File created by MIDL compiler version 6.00.0366 */
+/* at Sat Jun 01 13:38:53 2013
  */
 /* Compiler settings for .\MPAImageCutCOM.idl:
     Oicf, W1, Zp8, env=Win32 (32b run)
