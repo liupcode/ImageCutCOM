@@ -1,0 +1,27 @@
+HKCR
+{
+	MPAImageCutCOM.MPAImageCut.1 = s 'MPAImageCut Class'
+	{
+		CLSID = s '{9CDCA6F4-A37D-4651-92B1-DE639DE2830E}'
+	}
+	MPAImageCutCOM.MPAImageCut = s 'MPAImageCut Class'
+	{
+		CLSID = s '{9CDCA6F4-A37D-4651-92B1-DE639DE2830E}'
+		CurVer = s 'MPAImageCutCOM.MPAImageCut.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {9CDCA6F4-A37D-4651-92B1-DE639DE2830E} = s 'MPAImageCut Class'
+		{
+			ProgID = s 'MPAImageCutCOM.MPAImageCut.1'
+			VersionIndependentProgID = s 'MPAImageCutCOM.MPAImageCut'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{98DAD5A6-2CD9-485C-BED9-AE2763399233}'
+		}
+	}
+}

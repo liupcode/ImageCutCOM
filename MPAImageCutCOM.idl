@@ -1,0 +1,41 @@
+// MPAImageCutCOM.idl : IDL source for MPAImageCutCOM
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (MPAImageCutCOM.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(709011EE-41DC-4BFB-9143-5DC17CFB220C),
+	dual,
+	nonextensible,
+	helpstring("IMPAImageCut Interface"),
+	pointer_default(unique)
+]
+interface IMPAImageCut : IDispatch
+{
+	[id(1), helpstring("method Create")] HRESULT Create([in] BSTR bsImage,[in] BSTR bsFaceTag);
+	[id(2), helpstring("method GetFaceCount")] HRESULT GetFaceCount([out] LONG* lCount);
+	[id(3), helpstring("method GetImage")] HRESULT GetImage([in] LONG lIndex, [out] CHAR** pImg, [out] LONG* lSize);
+};
+//
+[
+	uuid(98DAD5A6-2CD9-485C-BED9-AE2763399233),
+	version(1.0),
+	helpstring("MPAImageCutCOM 1.0 Type Library")
+]
+library MPAImageCutCOMLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(9CDCA6F4-A37D-4651-92B1-DE639DE2830E),
+		helpstring("MPAImageCut Class")
+	]
+	coclass MPAImageCut
+	{
+		[default] interface IMPAImageCut;
+	};
+};
